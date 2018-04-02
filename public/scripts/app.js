@@ -63,21 +63,21 @@ function renderJoke(jokes) {
                             <ul class="list-group">
                               <li class="list-group-item">
                                 <h4 class='inline-header'>Prank Name:</h4>
-                                <span class='album-name'>${ joke.name }</span>
+                                <span>${ joke.name }</span>
                               </li>
 
                               <li class="list-group-item">
                                 <h4 class='inline-header'>Description:</h4>
-                                <span class='artist-name'>${ joke.description }</span>
+                                <span>${ joke.description }</span>
                               </li>
 
                               <li class="list-group-item">
                                 <h4 class='inline-header'>Company:</h4>
-                                <span class='album-releaseDate'>${ joke.company }</span>
+                                <span>${ joke.company }</span>
                               </li>
                               <li class="list-group-item">
                                 <h4 class='inline-header'>Link:</h4>
-                                <span class='album-releaseDate'>${ joke.link }</span>
+                                <span>${ joke.link }</span>
                               </li>
                             </ul>
                           </div>
