@@ -16,5 +16,10 @@
   "bugs": {
     "url": "https://github.com/DavidThayer/personal-api/issues"
   },
-  "homepage": "https://github.com/DavidThayer/personal-api#readme"
+  "homepage": "https://github.com/DavidThayer/personal-api#readme",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.3",
+    "mongoose": "^5.0.12"
+  }
 }
