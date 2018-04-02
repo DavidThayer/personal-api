@@ -1,6 +1,8 @@
 var mongoose = require('mongoose'),
   Schema = mongoose.Schema;
 
+var db = require('../models');
+
 var JokeSchema = new Schema({
   name: String,
   description: String,

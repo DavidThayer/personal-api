@@ -41,9 +41,8 @@ $(document).ready(function() {
     }
 
     // this function takes a single album and renders it to the page
-    function renderJoke(jokes) {
+function renderJoke(jokes) {
 
-      });
 
       console.log('rendering jokes:', jokes);
       $('#jokes').append(`
@@ -95,8 +94,7 @@ $(document).ready(function() {
                 </div>
                 <!-- end one album -->`);
 
-    }
 
 
-
-}; // end document.ready
+};
+}); // end document.ready
