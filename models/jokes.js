@@ -8,6 +8,6 @@ var JokeSchema = new Schema({
   link: String
 });
 
-var Jokes = mongoose.model('Joke', JokeSchema);
+var Jokes = mongoose.model('Jokes', JokeSchema);
 
 module.exports = Jokes;
