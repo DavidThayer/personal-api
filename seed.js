@@ -1,6 +1,6 @@
-var db = require('./models');
 
-var newJoke = {description: "What was your favorite April Fools joke of 2018?"}
+
+var db = require('./models');
 
 var aprilFoolsList =[{
   title: 'Niantic launches 8-bit pokemon GO',
@@ -22,13 +22,15 @@ var aprilFoolsList =[{
   description: 'Waldo is lost in google maps',
   company: 'Google',
   link: 'https://maps.google.com'
-}
+}];
 
-db.Jokes.create(newJoke, function(err, joke){
-  if (err){
-    return console.log("Error:", err);
-  }
-
-  console.log("New April Fools joke submitted: ", joke._id)
-  process.exit(); // we're all done! Exit the program.
-})
+db.Jokes.remove({}, function(err, jokes){
+  // code in here runs after all jokes are removed
+  db.Jokes.create(aprilFoolsList, function(err, jokes){
+    // code in here runs after all jokes are created
+    if (err) { return console.log('ERROR', err); }
+    console.log("all pranks:", jokes);
+    console.log("created", jokes.length, "pranks");
+    process.exit();
+  });
+});
