@@ -1,8 +1,9 @@
 .jumbotron {
-  background-image: url(../images/background1.jpg);
+  background-image: url(http://www.indiewire.com/wp-content/uploads/2018/03/seth-rogens-hilarity-for-charity-on-netflix.jpg?w=780);
   background-size: cover;
   background-repeat: no-repeat;
   color: #EEE;
+  text-align: center;
 }
 .jumbotron .container {
   height: 350px;
